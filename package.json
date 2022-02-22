@@ -1,7 +1,7 @@
 {
-  "name": "lr-master",
+  "name": "HR-Report",
   "version": "1.0.0",
-  "description": "Mustervorlage",
+  "description": "Report zum Auswerten von Überstunden",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

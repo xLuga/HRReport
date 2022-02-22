@@ -1,4 +1,4 @@
-specVersion: '2.6'
+specVersion: "2.6"
 metadata:
-  name: lr-master
+  name: HR-Report
 type: application
