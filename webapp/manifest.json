@@ -56,6 +56,10 @@
 					],
 					"fallbackLocale": ""
 				}
+			},
+			"results": {
+				"uri": "auswertung.json",
+				"type": "sap.ui.model.json.JSONModel"
 			}
 		},
 		"routing": {
