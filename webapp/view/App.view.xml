@@ -1,0 +1,12 @@
+<mvc:View
+	controllerName="sap.ui.demo.walkthrough.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+	<Shell>
+		<App id="app"/>
+	</Shell>
+</mvc:View>
