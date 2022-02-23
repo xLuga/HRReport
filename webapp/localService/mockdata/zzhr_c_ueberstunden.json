@@ -1,0 +1,42 @@
+[
+    {
+        "pernr" : "00001155",
+        "vorna" : "Lothar",
+        "nachn" : "Schürrle",
+        "begda" : "\/Date(-58838400000)\/",
+        "plans" : "99999999",
+        "orgeh" : "50020386",
+        "kostl" : "51420",
+        "verantwortlicher" : "dsd"
+      },
+      {
+        "pernr" : "00001375",
+        "vorna" : "Johnny",
+        "nachn" : "Müller",
+        "begda" : "\/Date(-591062400000)\/",
+        "plans" : "99999999",
+        "orgeh" : "00000000",
+        "kostl" : "",
+        "verantwortlicher" : "dsd"
+      },
+      {
+        "pernr" : "00001469",
+        "vorna" : "Willi",
+        "nachn" : "Jung",
+        "begda" : "\/Date(-275443200000)\/",
+        "plans" : "99999999",
+        "orgeh" : "50020386",
+        "kostl" : "51420",
+        "verantwortlicher" : "dsd"
+      },
+      {
+        "pernr" : "00001494",
+        "vorna" : "André",
+        "nachn" : "Höwedes",
+        "begda" : "\/Date(1184198400000)\/",
+        "plans" : "99999999",
+        "orgeh" : "50027684",
+        "kostl" : "51330",
+        "verantwortlicher" : "dsd"
+      }
+]

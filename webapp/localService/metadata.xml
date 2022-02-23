@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edmx:Edmx xmlns:sap="http://www.sap.com/Protocols/SAPData" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="http://cirfe.fft-it.de:8005/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value">
+<edmx:Include Alias="Capabilities" Namespace="Org.OData.Capabilities.V1"/>
+</edmx:Reference>
+<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="http://cirfe.fft-it.de:8005/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value">
+<edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+</edmx:Reference>
+<edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="http://cirfe.fft-it.de:8005/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value">
+<edmx:Include Alias="Communication" Namespace="com.sap.vocabularies.Communication.v1"/>
+</edmx:Reference>
+<edmx:DataServices m:DataServiceVersion="2.0">
+<Schema xml:lang="de" Namespace="ZZHR_C_UEBERSTUNDEN_CDS" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" sap:schema-version="1">
+<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" String="1.0.0" Term="Core.SchemaVersion"/>
+<EntityType sap:content-version="1" Name="zzhr_c_ueberstundenType">
+<Key>
+<PropertyRef Name="pernr"/>
+<PropertyRef Name="vorna"/>
+<PropertyRef Name="nachn"/>
+</Key>
+<Property Name="pernr" sap:label="Personalnummer" sap:display-format="NonNegative" MaxLength="8" Nullable="false" Type="Edm.String"/>
+<Property Name="vorna" sap:label="Vorname" MaxLength="40" Nullable="false" Type="Edm.String"/>
+<Property Name="nachn" sap:label="Nachname" MaxLength="40" Nullable="false" Type="Edm.String"/>
+<Property Name="begda" sap:label="Gültig ab" sap:display-format="Date" Type="Edm.DateTime" sap:quickinfo="Gültigkeitsbeginn" Precision="0"/>
+<Property Name="plans" sap:label="Planstelle" sap:display-format="NonNegative" MaxLength="8" Type="Edm.String"/>
+<Property Name="orgeh" sap:label="Organisationseinheit" sap:display-format="NonNegative" MaxLength="8" Type="Edm.String"/>
+<Property Name="kostl" sap:label="Kostenstelle" sap:display-format="UpperCase" MaxLength="10" Type="Edm.String"/>
+<Property Name="verantwortlicher" sap:display-format="UpperCase" MaxLength="40" Type="Edm.String"/>
+</EntityType>
+<EntityContainer Name="ZZHR_C_UEBERSTUNDEN_CDS_Entities" sap:supported-formats="atom json xlsx" m:IsDefaultEntityContainer="true">
+<EntitySet sap:content-version="1" Name="zzhr_c_ueberstunden" sap:deletable="false" sap:updatable="false" sap:creatable="false" EntityType="ZZHR_C_UEBERSTUNDEN_CDS.zzhr_c_ueberstundenType"/>
+</EntityContainer>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="http://cirfe.fft-it.de:8005/sap/opu/odata/sap/ZZHR_C_UEBERSTUNDEN_CDS/$metadata" rel="self"/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="http://cirfe.fft-it.de:8005/sap/opu/odata/sap/ZZHR_C_UEBERSTUNDEN_CDS/$metadata" rel="latest-version"/>
+</Schema>
+</edmx:DataServices>
+</edmx:Edmx>
