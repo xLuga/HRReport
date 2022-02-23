@@ -16,8 +16,8 @@
 			"version": "1.0.0"
 		},
 		"dataSources": {
-			"invoiceRemote": {
-				"uri": "",
+			"zzhr_c_ueberstunden": {
+				"uri": "http://cirfe.fft-it.de:8005/sap/opu/odata/sap/ZZHR_C_UEBERSTUNDEN_CDS",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0"
@@ -57,9 +57,8 @@
 					"fallbackLocale": ""
 				}
 			},
-			"results": {
-				"uri": "auswertung.json",
-				"type": "sap.ui.model.json.JSONModel"
+			"zzhr_c_ueberstunden": {
+				"dataSource": "zzhr_c_ueberstunden"
 			}
 		},
 		"routing": {

@@ -8,7 +8,7 @@ sap.ui.define([
 		init: function () {
 			// create
 			var oMockServer = new MockServer({
-				rootUri: "http://cirfe.fft-it.de:8005/sap/opu/odata/sap/ZZHR_C_UEBERSTUNDEN_CDS"
+				rootUri: "/"
 			});
 
 			var oUriParameters = new UriParameters(window.location.href);

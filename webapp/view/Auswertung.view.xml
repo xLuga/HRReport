@@ -2,8 +2,6 @@
 	controllerName=""
 	xmlns="sap.ui.table"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:u="sap.ui.unified"
-	xmlns:c="sap.ui.core"
 	xmlns:m="sap.m"
 	height="100%"
 >
@@ -18,17 +16,17 @@
 				selectionMode="MultiToggle"
 				visibleRowCount="10"
 				enableSelectAll="false"
-				rows="{results/Results}"
+				rows="{/zzhr_c_ueberstunden}"
 				threshold="15"
 				enableBusyIndicator="true"
 				ariaLabelledBy="title"
 			>
 				<columns>
 					<Column width="11rem">
-						<m:Label text="Buchungskreis"/>
+						<m:Label text="Personalnummer"/>
 						<template>
 							<m:Text
-								text="{bukrs}"
+								text="{pernr}"
 								wrapping="false"
 							/>
 						</template>
